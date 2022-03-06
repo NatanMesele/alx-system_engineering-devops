@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vincent charp staff
+chown -R vincent charp -R staff
