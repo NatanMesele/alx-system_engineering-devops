@@ -1,2 +1,2 @@
 #!/bin/bashch
-chown guillaume: hello betty
+chown --from=guillaume betty hello
