@@ -1,0 +1,2 @@
+#!/bin/bash
+system.out.println(HELLO,WORLD);
