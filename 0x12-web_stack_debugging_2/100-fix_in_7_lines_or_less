@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Bash script that makes nginx run from the user 'nginx'
+pkill -9 apache2
+sed -i 's/80/8080/g' /etc/nginx/sites-available/default
+chown nginx /etc/nginx/nginx.conf
+chmod 700 /etc/nginx/nginx.conf
+sudo -u nginx bash -c 'service nginx start'
