@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Nginx must be running, and listening on port 80 of all the server’s active IPv4 IPs AND service (init) must say that nginx is not running
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+service nginx restart
+rm /run/nginx.pid
